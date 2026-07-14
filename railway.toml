@@ -1,6 +1,5 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "composer config -g audit.block-insecure false && composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist --no-audit"
 
 [deploy]
 startCommand = "php -S 0.0.0.0:$PORT -t public"
