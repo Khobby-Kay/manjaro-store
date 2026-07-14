@@ -1,0 +1,7 @@
+{
+  "name": "manjaro-store",
+  "private": true,
+  "scripts": {
+    "vercel-build": "composer install --no-dev --optimize-autoloader --no-interaction"
+  }
+}
