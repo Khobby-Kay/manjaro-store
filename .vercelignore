@@ -1,0 +1,6 @@
+/vendor
+/node_modules
+.env
+*.pem
+shop.sql
+**/*backup*.sql
