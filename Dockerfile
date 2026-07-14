@@ -1,5 +1,7 @@
 FROM php:8.2-apache
 
+# Railway Laravel deploy for Manjaro store
+
 RUN apt-get update && apt-get install -y \
     git unzip libzip-dev libpng-dev libjpeg-dev libfreetype6-dev libonig-dev libxml2-dev libicu-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
