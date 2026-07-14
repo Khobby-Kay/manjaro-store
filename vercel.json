@@ -1,17 +1,28 @@
 {
   "version": 2,
-  "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.7.4",
-      "memory": 1024,
-      "maxDuration": 30
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "vercel-php@0.7.4"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
-  },
+  ],
   "routes": [
-    { "src": "/assets/(.*)", "dest": "/public/assets/$1" },
-    { "src": "/uploads/(.*)", "dest": "/public/uploads/$1" },
-    { "src": "/(.*)\\.(css|js|png|jpg|jpeg|gif|ico|svg|woff2?|ttf|eot|map)", "dest": "/public/$1.$2" },
-    { "src": "/(.*)", "dest": "/api/index.php" }
+    {
+      "src": "/(css|js|fonts|img)/(.*)",
+      "dest": "public/$1/$2"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "public/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
   ],
   "env": {
     "APP_ENV": "production",
