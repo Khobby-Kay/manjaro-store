@@ -1,0 +1,16 @@
+.git
+.vercel
+.env
+vendor
+node_modules
+123
+and
+__MACOSX
+updates
+shop.sql
+*.pem
+storage/logs/*.log
+scripts/node_modules
+public/uploads.zip
+*.md
+docs
