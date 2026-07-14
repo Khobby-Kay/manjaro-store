@@ -22,7 +22,7 @@ yarn-error.log
 /123/
 /and/
 /updates/
-updates/
+/__MACOSX/
 composer.lock
 *.lock
 resources/lang/en.json
@@ -36,3 +36,4 @@ public/uploads.zip
 .env
 public/all
 
+.vercel

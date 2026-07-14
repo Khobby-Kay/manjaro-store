@@ -4,3 +4,9 @@
 *.pem
 shop.sql
 **/*backup*.sql
+/123/
+/and/
+/updates/
+/__MACOSX/
+/storage/logs/
+public/uploads.zip
