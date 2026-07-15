@@ -10,7 +10,7 @@
         "aiz-packages/combination-generate": "dev-main",
         "anandsiddharth/laravel-paytm-wallet": "^2.0",
         "authorizenet/authorizenet": "^2.0",
-        "enshrined/svg-sanitize": "^0.15.4",
+        "enshrined/svg-sanitize": "^0.22.0",
         "genealabs/laravel-sign-in-with-apple": "*",
         "genealabs/laravel-socialiter": "*",
         "guzzlehttp/guzzle": "^7.5",
@@ -19,7 +19,7 @@
         "iyzico/iyzipay-php": "^2.0",
         "kingflamez/laravelrave": "dev-master",
         "laracasts/flash": "^3.2",
-        "laravel/framework": "^10.0",
+        "laravel/framework": "^10.48",
         "laravel/sanctum": "^3.2",
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.8",
@@ -96,6 +96,9 @@
         "optimize-autoloader": true,
         "allow-plugins": {
             "symfony/thanks": true
+        },
+        "audit": {
+            "block-insecure": false
         }
     },
     "minimum-stability": "stable",
