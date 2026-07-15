@@ -2,7 +2,9 @@
 nixPkgs = ["php82", "php82Packages.composer"]
 
 [phases.install]
-cmds = ["composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist --ignore-platform-reqs --no-audit"]
+cmds = [
+  "COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist --ignore-platform-reqs"
+]
 
 [start]
 cmd = "php -S 0.0.0.0:$PORT -t public"
